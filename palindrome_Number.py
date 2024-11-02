@@ -19,7 +19,4 @@ class Solution:
             else:
                 left += 1
                 right -= 1
-        if is_palindrome == True:
-            return True
-        else:
-            return False
+        return is_palindrome
