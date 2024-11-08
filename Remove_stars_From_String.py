@@ -21,4 +21,4 @@ class Solution:
                 stack.pop()
             else:
                 stack.append(i)
-        return "".join(stack)
+        return "".join(stack) 
