@@ -25,3 +25,4 @@ class Solution:
                 else:
                     return False
         return len(stack) == 0
+        
