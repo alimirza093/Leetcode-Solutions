@@ -23,4 +23,5 @@ class Solution:
             list1 = list1.next if list1 else None
             list2 = list2.next if list2 else None
         return dummy.next
+
         
