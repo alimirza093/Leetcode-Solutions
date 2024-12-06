@@ -16,10 +16,8 @@ class Solution:
                 cur = q.popleft()
                 if cur:
                     level.append(cur.val)
-                    if cur.left:
-                        q.append(cur.left)
-                    if cur.right:
-                        q.append(cur.right)
+                    q.append(cur.left)
+                    q.append(cur.right)
             if level:
                 res.append(level)
         return res
