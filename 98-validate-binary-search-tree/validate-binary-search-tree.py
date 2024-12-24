@@ -9,7 +9,7 @@ class Solution:
         def pre(lower , root , upper):
             if not root:
                 return True
-            # Now Check The Condition of Valid Binary Tree
+            # Now checking the condition of Valid Binary Tree Search (BTS)
             if not lower < root.val < upper:
                 return False
             return pre(lower , root.left , root.val) and pre(root.val , root.right , upper)
