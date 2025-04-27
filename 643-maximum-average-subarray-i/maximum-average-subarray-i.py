@@ -4,7 +4,7 @@ class Solution:
         maxSum = curSum
         for i in range(k , len(nums)):
             curSum += nums[i]
-            curSum -= nums[i-k]
+            curSum -= nums[i -  k]
             maxSum = max(curSum , maxSum)
         return maxSum/k
         
