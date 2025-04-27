@@ -4,7 +4,7 @@ class Solution:
         r = 1
         while r < len(nums):
             if nums[l] == nums[r]:
-                nums.pop(l)
+                nums.pop(r)
             else:
                 l += 1
                 r += 1
