@@ -8,3 +8,4 @@ class Solution:
             else:
                 l += 1
                 r += 1
+        return len(nums)
