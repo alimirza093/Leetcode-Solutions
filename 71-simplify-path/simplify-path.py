@@ -4,10 +4,10 @@ class Solution:
         cur = ""
         for s in path + "/":
             if s == "/":
-                if cur == "..":
+                if cur =="..":
                     if stack:
                         stack.pop()
-                elif cur!="." and cur!="":
+                elif cur != "." and cur != "":
                     stack.append(cur)
                 cur = ""
             else:
