@@ -1,13 +1,9 @@
 class Solution:
     def minLength(self, s: str) -> int:
         stack = []
-        for val in s:
-            if stack:
-                if stack[-1] == "A" and val == "B":
-                    stack.pop()
-                    continue
-                elif stack[-1] == "C" and val == "D":
-                    stack.pop()
-                    continue
-            stack.append(val)
+        for i in s:
+            if stack and ((stack[-1] == "A"  and i == "B" ) or (stack[-1] == "C" and i == "D")):
+                stack.pop()
+            else:
+                stack.append(i)
         return len(stack)
