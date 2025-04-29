@@ -4,7 +4,7 @@ class Solution:
         for i in s:
             if i == "*":
                 stack.pop()
-                continue
+                # continue
             else:
                 stack.append(i)
         return "".join(stack)
