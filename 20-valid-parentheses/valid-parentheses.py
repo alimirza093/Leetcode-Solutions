@@ -9,5 +9,6 @@ class Solution:
             elif val in end:
                 if not stack or stack[-1] != start[end.index(val)]:
                     return False
-                stack.pop()
+                else:
+                    stack.pop()
         return len(stack) == 0
