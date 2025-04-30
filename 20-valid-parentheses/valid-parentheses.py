@@ -1,15 +1,13 @@
 class Solution:
     def isValid(self, s: str) -> bool:
+        start = "({["
+        end = ")}]"
         stack = []
-        start = "[{("
-        end = "]})"
-
-        for i in s:
-            if i in start:
-                stack.append(i)
-            elif i in end:
-                if stack and stack[-1] == start[end.index(i)]:
-                    stack.pop()
-                else:
+        for val in s:
+            if val in start:
+                stack.append(val)
+            elif val in end:
+                if not stack or stack[-1] != start[end.index(val)]:
                     return False
+                stack.pop()
         return len(stack) == 0
